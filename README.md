@@ -6,7 +6,7 @@ Este projeto tem como objetivo desenvolver um **sistema de controle de estoque**
 ## 🧱 Protótipo
 O sistema é operado por menu de terminal:
 
-📄 [Visualizar Protótipo em PDF](./desing/Prototipo.pdf)
+📄 [Visualizar Protótipo em PDF](./design/Prototipo.pdf)
 
 ## 💻 Tecnologias utilizadas
 - Java
