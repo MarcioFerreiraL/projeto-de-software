@@ -1,0 +1,23 @@
+@startuml Casos de Uso
+actor Funcionário as func
+actor Administrador as adm
+
+left to right direction
+
+rectangle Estoque {
+    usecase "Cadastrar Produto" as UC1
+    usecase "Atualizar Produto" as UC2
+    usecase "Gerar Relatório" as UC3
+    usecase "Consultar Produto" as UC4
+    usecase "Registrar Entrada de Estoque" as UC5
+    usecase "Registrar Saída de Estoque" as UC6
+}
+
+adm --> UC1
+adm --> UC2
+adm --> UC3
+adm --> UC4
+func --> UC4
+func --> UC5
+func --> UC6
+@enduml
