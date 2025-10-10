@@ -1,0 +1,35 @@
+@startuml Diagrama de classes
+rectangle sistemas-estoque{
+  class Produto {
+    -int id
+    -string nome
+    -string categoria
+    -int quantidade
+    -float preco
+    +atualizarQuantidade(qtd:int)
+    +exibirInfo()
+  }
+
+  class Movimentacao {
+    -int id
+    -string tipo
+    -int quantidade
+    -date data
+    -Produto produto
+    +registrar()
+  }
+
+  class Usuario {
+    -int id
+    -string nome
+    -string tipo
+    +autenticar()
+  }
+
+  class Relatorio {
+    +gerarRelatorioEstoque()
+  }
+}
+Produto "1" <--> "*" Movimentacao : movimenta
+Usuario "1" <--> "*" Movimentacao : realiza
+@enduml
