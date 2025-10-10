@@ -1,29 +1,19 @@
-package sistema;
+package model;
 
 import java.util.Date;
 
-public class Movimentacao {
-	private int id;
+public class Movimentacao extends Entidade{
 	private TIPO_MOVIMENTACAO tipo;
 	private int quantidade;
 	private Date data;
 	private Produto produto;
 	
 	public Movimentacao(int id, TIPO_MOVIMENTACAO tipo, int quantidade, Date data, Produto produto) {
-		super();
-		this.id = id;
+		super(id);
 		this.tipo = tipo;
 		this.quantidade = quantidade;
 		this.data = data;
 		this.produto = produto;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public TIPO_MOVIMENTACAO getTipo() {

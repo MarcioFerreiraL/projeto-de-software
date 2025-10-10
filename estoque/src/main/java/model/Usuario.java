@@ -1,13 +1,12 @@
-package sistema;
+package model;
 
-public class Usuario {
+public class Usuario extends Entidade{
 	private int id;
 	private String nome;
 	private TIPO_USUARIO tipo;
 	
 	public Usuario(int id, String nome, TIPO_USUARIO tipo) {
-		super();
-		this.id = id;
+		super(id);
 		this.nome = nome;
 		this.tipo = tipo;
 	}

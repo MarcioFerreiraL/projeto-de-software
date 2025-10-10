@@ -1,4 +1,4 @@
-package sistema;
+package model;
 
 public class Relatorio {
 	public void gerarRelatorio() {
